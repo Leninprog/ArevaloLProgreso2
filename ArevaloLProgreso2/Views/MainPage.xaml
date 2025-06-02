@@ -6,11 +6,25 @@
              Title="Bienvenido">
 
     <ScrollView>
-        <StackLayout Padding="20" VerticalOptions="Center">
-            <Label Text="Lenin Nicolas Arevalo Garcia" FontSize="32" HorizontalOptions="Center"/>
-            <Image Source="perfil.jpg" HeightRequest="150" WidthRequest="150"/>
-            <Button Text="Ver un Chiste" Clicked="OnChisteClicked"/>
-            <Button Text="Acerca de mí" Clicked="OnAboutClicked"/>
+        <StackLayout Padding="90" Spacing="25" VerticalOptions="Center">
+            
+            <Label Text="Bienvenido a la aplicacion de Lenin Nicolas Arevalo Garcia" 
+                   FontSize="32" 
+                   HorizontalOptions="Center"/>
+            
+            <Image Source="perfil.png" 
+                   HeightRequest="185" 
+                   Aspect="AspectFit" 
+                   SemanticProperties.Description="Programando el proyecto final"/>
+            
+            <Button 
+                Text="Ver un Chiste" 
+                Clicked="OnChisteClicked"/>
+            
+            <Button 
+                Text="Acerca de mí" 
+                Clicked="OnInfoClicked"/>
+            
         </StackLayout>
     </ScrollView>
 

@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ArevaloLProgreso2.Views.ChistesPage"
              Title="ChistesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+
+        <Label x:Name="ChisteLabel"
+               FontSize="20" 
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.9, 0.3"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button Text="Otro chiste"
+            AbsoluteLayout.LayoutBounds="0.5,1,0.8,50"
+            AbsoluteLayout.LayoutFlags="WidthProportional, PositionProportional"
+            Clicked="OnOtroChisteClicked"/>
+    </AbsoluteLayout>
+    
 </ContentPage>

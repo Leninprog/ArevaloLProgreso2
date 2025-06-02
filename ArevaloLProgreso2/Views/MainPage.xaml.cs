@@ -1,17 +1,17 @@
-﻿namespace ArevaloLProgreso2
+﻿using ArevaloLProgreso2.Views;
+
+namespace ArevaloLProgreso2
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private async void OnAboutClicked(object sender, EventArgs e)
+        private async void OnInfoClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AboutPage());
+            await Navigation.PushAsync(new InfoPage());
         }
 
         private async void OnChisteClicked(object sender, EventArgs e)
