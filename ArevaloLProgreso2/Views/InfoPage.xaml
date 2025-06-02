@@ -3,19 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ArevaloLProgreso2.Views.InfoPage"
              Title="InfoPage">
-    <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*"
-      Padding="20">
-        <Label Text="Nombre:" Grid.Row="0" Grid.Column="0"/>
-        <Label Text="Lenin Arevalo" Grid.Row="0" Grid.Column="1"/>
 
-        <Label Text="Nacimiento:" Grid.Row="1" Grid.Column="0"/>
-        <Label Text="20/12/2002" Grid.Row="1" Grid.Column="1"/>
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+        <BoxView Color="DarkGreen" Grid.Row="0" Grid.Column="0"/>
+        <Label 
+               Grid.Row="0" Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="White"
+               Text="Nombre: Lenin Arevalo"/>
 
-        <Label Text="Intereses:" Grid.Row="2" Grid.Column="0"/>
-        <Label Text="Tecnología, Cine, Deportes, Trabajo" Grid.Row="2" Grid.Column="1"/>
+        <BoxView Color="DodgerBlue" Grid.Row="0" Grid.Column="1"/>
+        <Label 
+               Grid.Row="0" Grid.Column="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="White"
+               Text="Nacimiento: 20/12/2002"/>
 
-        <Label Text="Versión:" Grid.Row="3" Grid.Column="0"/>
-        <Label Text="1.0.0" Grid.Row="3" Grid.Column="1"/>
+        <BoxView Color="Orange" Grid.Row="1" Grid.Column="0"/>
+        <Label 
+               Grid.Row="1" Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="Black"
+               Text="Intereses: Tecnología, Cine, Deportes, Trabajo"/>
+
+        <BoxView Color="Yellow" Grid.Row="1" Grid.Column="1"/>
+        <Label
+            Grid.Row="1" Grid.Column="1"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="Black"
+            Text="Version: 1.0.0"/>
+
     </Grid>
+
 </ContentPage>
 
