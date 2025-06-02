@@ -4,39 +4,47 @@
              x:Class="ArevaloLProgreso2.Views.InfoPage"
              Title="InfoPage">
 
-    <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
-        <BoxView Color="DarkGreen" Grid.Row="0" Grid.Column="0"/>
-        <Label 
-               Grid.Row="0" Grid.Column="0"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               TextColor="White"
-               Text="Nombre: Lenin Arevalo"/>
+    <Grid Padding="20"
+  RowDefinitions="Auto, Auto"
+  ColumnDefinitions="*, *"
+  ColumnSpacing="20"
+  RowSpacing="20">
 
-        <BoxView Color="DodgerBlue" Grid.Row="0" Grid.Column="1"/>
-        <Label 
-               Grid.Row="0" Grid.Column="1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               TextColor="White"
-               Text="Nacimiento: 20/12/2002"/>
+        <Frame Grid.Row="0" Grid.Column="0"
+       BorderColor="Gray" CornerRadius="0"
+       Padding="10" Margin="0">
+            <VerticalStackLayout>
+                <Label Text="Nombre:" FontAttributes="Bold" FontSize="16"/>
+                <Label Text="Lenin Arevalo" FontSize="17"/>
+            </VerticalStackLayout>
+        </Frame>
 
-        <BoxView Color="Orange" Grid.Row="1" Grid.Column="0"/>
-        <Label 
-               Grid.Row="1" Grid.Column="0"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               TextColor="Black"
-               Text="Intereses: Tecnología, Cine, Deportes, Trabajo"/>
+        <Frame Grid.Row="0" Grid.Column="1"
+       BorderColor="Gray" CornerRadius="0"
+       Padding="10" Margin="0">
+            <VerticalStackLayout>
+                <Label Text="Fecha de Nacimiento:" FontAttributes="Bold" FontSize="16"/>
+                <Label Text="20/12/2002" FontSize="17"/>
+            </VerticalStackLayout>
+        </Frame>
 
-        <BoxView Color="Yellow" Grid.Row="1" Grid.Column="1"/>
-        <Label
-            Grid.Row="1" Grid.Column="1"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            TextColor="Black"
-            Text="Version: 1.0.0"/>
+        <Frame Grid.Row="1" Grid.Column="0"
+       BorderColor="Gray" CornerRadius="0"
+       Padding="10" Margin="0">
+            <VerticalStackLayout>
+                <Label Text="Intereses:" FontAttributes="Bold" FontSize="16"/>
+                <Label Text="Deportes, Trabajos, Tecnologia, Cine" FontSize="17"/>
+            </VerticalStackLayout>
+        </Frame>
 
+        <Frame Grid.Row="1" Grid.Column="1"
+       BorderColor="Gray" CornerRadius="0"
+       Padding="10" Margin="0">
+            <VerticalStackLayout>
+                <Label Text="Versión:" FontAttributes="Bold" FontSize="16"/>
+                <Label Text="1.0.0" FontSize="17"/>
+            </VerticalStackLayout>
+        </Frame>
     </Grid>
 
 </ContentPage>

@@ -7,6 +7,7 @@
 
         <Label x:Name="ChisteLabel"
                FontSize="20" 
+               Background="Beige"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"
                AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.9, 0.3"
